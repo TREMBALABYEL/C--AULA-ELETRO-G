@@ -6,5 +6,7 @@ int main(){
     int soma;
     soma = abyel1 + abyel2;
     printf("%d", soma);
-    return 0;
+
+    char letra ='a';
+    printf("%c" ,letra);
 }
