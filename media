@@ -6,16 +6,19 @@ int main(){
     scanf("%f %f %f %f", &nota1, &nota2, &nota3, &nota4);
     media = (nota1 + nota2 + nota3 + nota4) / 4;
     printf("sua nota final é: %.2f\n", media);
-    if(4 >= media >= 7){
+
+    if(media >= 4 && media < 7){
         printf("sinto muito voce esta reprovado, porem poderá fazer o exame final");
+        return 0;
     }
-    else{
-        printf("parabens voce esta aprovado!");
+    if(media >= 7){
+        printf("paraben voce esta aprovado");
+        return 0;
     }
-    if (media < 4)
-    {
-        printf("sinto muito voce está reprovado, sem chance de ultimo exame:( ")
+    if(media < 4){
+        printf("reprovado!");
+        return 0;
     }
-    
+
     return 0;
 }
