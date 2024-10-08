@@ -1,0 +1,84 @@
+#include<stdio.h>
+//atividade 2.1
+int main(){
+    float distancia;
+    float litros;
+    float media;
+    printf("qual a distancia percorrida? ");
+    scanf("%f", &distancia);
+    printf("quantidade de gasolina? ");
+    scanf("%f", &litros);
+    media = distancia / litros;
+    printf("consumo: %.2f\n", media);
+
+//atividade 2.2
+
+    int comp;//comprimento
+    int larg;//largura
+    int mq;//quantidade de metro quadrado informada pelo cliente
+    int mq1 = 5;//valor de cada metro quadrado 
+    int mq2;//total em dinheiro multiplicando mq e mq1
+    printf("informe o comprimento: ");
+    scanf("%d",&comp);
+    printf("informe a largura: ");
+    scanf("%d",&larg);
+    mq = comp * larg;
+    mq2 = mq * mq1;
+    printf("o valor total pela quantidade de metro quadrado é: ",mq2);
+    return 0;
+
+//atividade 2.3
+    float imc;
+    float altura;
+    float peso;
+    
+    printf("qual é sua altura?");
+    scanf("%f", &altura);
+    
+    printf("qual é seu peso?");
+    scanf("%f", &peso);
+    
+    imc = peso / (altura*altura);
+    printf("o seu imc é: %.2f\n",imc);
+
+    return 0;
+
+//atividade 2.4
+
+    int arquivo;//em bits
+    int bits;//velocidade de conexão
+    int segundo;//velocidade de conexão
+    int dowload;
+    printf("informe o tamanho do arquivo em bits",arquivo);
+    scanf("%d", &arquivo);
+    printf("informe a velocidade de conexão, informe em bits: ");
+    scanf("%d", &bits);
+    printf("informe a velocidade de conexão em segundos: ");
+    scanf("%d", &segundo);
+    dowload = arquivo / (bits / segundo);
+    printf("velocidade de dowload: %d", dowload)
+    if (dowload < 20){
+        printf("sua internet está muito fraca!");
+    }
+    else{
+        printf("sua internet está ok");
+    }
+     
+     return 0;
+}
+
+#include<math.h>
+int main(){
+    int c;//capital
+    int j;//taxa de juros mensal fixa
+    int m;//um período de aplicação em meses
+    int f;//o montante no final do período
+    printf("qual o seu capital? ");
+    scanf("%d", &c);
+    printf("qual é sua taxa de juros mensal fixa? ");
+    scanf("%d", &j);
+    printf("informe seu período de aplicação em meses: ");
+    scanf("%d", &m);
+    f = c*pow(1+j/100,m);
+    printf("o montante é: %d", f);
+}
