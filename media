@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main(){
+    float nota1, nota2, nota3, nota4;
+    float total;
+    float media;
+    printf("informe suas notas: ");
+    scanf("%f %f %f %f", &nota1, &nota2, &nota3, &nota4);
+    total = nota1 + nota2 + nota3 + nota4;
+    media = total / 4;
+    printf("sua nota final é: %.2f\n", media);
+    if(4 > media > 7){
+        printf("sinto muito voce esta reprovado, porem poderá fazer o exame final");
+    }
+    else{
+        printf("parabens voce esta aprovado!");
+    }
+    if (media < 4){
+        printf("sinto muito voce está reprovado, sem chance de ultimo exame:( ");
+    }
+    
+    return 0;
+}
