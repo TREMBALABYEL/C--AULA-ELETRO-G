@@ -16,17 +16,15 @@ int main(){
     int comp;//comprimento
     int larg;//largura
     int mq;//quantidade de metro quadrado informada pelo cliente
-    int mq1 = 5;//valor de cada metro quadrado 
     int mq2;//total em dinheiro multiplicando mq e mq1
     printf("informe o comprimento: ");
     scanf("%d",&comp);
     printf("informe a largura: ");
     scanf("%d",&larg);
     mq = comp * larg;
-    mq2 = mq * mq1;
-    printf("o valor total pela quantidade de metro quadrado é: ",mq2);
-    return 0;
-
+    mq2 = mq * 5;
+    printf("o valor total pela quantidade de metro quadrado é: %d",mq2);
+    
 //atividade 2.3
     float imc;
     float altura;
@@ -38,10 +36,8 @@ int main(){
     printf("qual é seu peso?");
     scanf("%f", &peso);
     
-    imc = peso / (altura*altura);
+    imc = peso / (altura * altura);
     printf("o seu imc é: %.2f\n",imc);
-
-    return 0;
 
 //atividade 2.4
 
@@ -56,19 +52,12 @@ int main(){
     printf("informe a velocidade de conexão em segundos: ");
     scanf("%d", &segundo);
     dowload = arquivo / (bits / segundo);
-    printf("velocidade de dowload: %d", dowload)
-    if (dowload < 20){
-        printf("sua internet está muito fraca!");
-    }
-    else{
-        printf("sua internet está ok");
-    }
-     
-     return 0;
-}
+    printf("velocidade de dowload: %d", dowload);
+  
 
+//atividade 2.5
 #include<math.h>
-int main(){
+
     int c;//capital
     int j;//taxa de juros mensal fixa
     int m;//um período de aplicação em meses
@@ -81,4 +70,5 @@ int main(){
     scanf("%d", &m);
     f = c*pow(1+j/100,m);
     printf("o montante é: %d", f);
+    return 0;
 }
