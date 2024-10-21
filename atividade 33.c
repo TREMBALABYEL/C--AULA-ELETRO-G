@@ -63,7 +63,7 @@ int main(){
     printf("qual o lado inferior z do triangulo: ");
     scanf("%d", &z);
     if (x == y && y == z){printf("o seu triangulo é um equilatero!");}
-    if (x == y && y != z){printf("o seu triangulo é um isoceles!");}
+    if (x == y || y == z || x == z){printf("o seu triangulo é um isoceles!");}
     if (x != y && y != z){printf("o seu triangulo é escaleno!");}
     
 
