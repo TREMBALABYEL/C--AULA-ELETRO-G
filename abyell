@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(){
+    int v;int q;int a;int qc;
+    printf("quantidade de candidatos: \n");
+    scanf("%d", &qc);
+    a = -1;
+    for(v = 1; v <= qc; v++){
+        printf("quantidade de votos do: %d\n", v);
+        scanf("%d", &q);
+        if (q > a){a = q;}
+    }
+    for(v = 1; v <= qc; v++){printf("apuração: %d %d\n", v, a);}
+    printf("o mais votado foi: %d", a);
+}
