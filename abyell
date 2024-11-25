@@ -9,6 +9,6 @@ int main(){
         scanf("%d", &q);
         if (q > a){a = q;}
     }
-    for(v = 1; v <= qc; v++){printf("apuração: %d %d\n", v, a);}
-    printf("o mais votado foi: %d", a);
+    for(v = 1; v <= qc; v++){printf("apuracao: %d %d\n", v, q);}
+    printf("o mais votado foi candidato: %d", v);
 }
